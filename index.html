@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Individualių namų statyba</title>
+<meta name="description" content="Individualių namų statyba visoje Lietuvoje nuo geodezijos iki rakto. 10 metų patirtis, 100+ užbaigtų objektų">
+<!--
+  PROTOTIPAS / SVETAINĖS PAGRINDAS
+  Visi skaičiai (kainos nuo X €/m², terminai, atsakymo laikas, atsiliepimai, objektų aprašai) yra DEMONSTRACINIAI
+  ir turi būti patvirtinti užsakovo. Faktai iš brifo: 10 metų patirtis, 100+ užbaigtų objektų, darbai nuo geodezijos iki vidaus apdailos, visa Lietuva.
+  Paveikslėliai img/*.svg yra laikinos iliustracijos, keičiamos tikromis nuotraukomis.
+  Kontaktai, nuorodos ir logotipas yra laikini.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- ================= MENIU ================= -->
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Logotipas"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></i><span data-i="logo">JŪSŲ LOGOTIPAS</span></a>
+    <nav class="menu">
+      <a href="#kainos" data-i="m1">Kainos</a>
+      <a href="#skaiciuokle" data-i="m2">Skaičiuoklė</a>
+      <a href="#etapai" data-i="m3">Etapai</a>
+      <a href="projektai.html" data-i="m4">Objektai</a>
+      <a href="#duk" data-i="m5">DUK</a>
+      <a href="#kontaktai" data-i="m6">Kontaktai</a>
+    </nav>
+    <div class="nav-right">
+      <a class="phone" href="tel:+37060000000">+370 600 00000</a>
+      <div class="langs" role="group" aria-label="Kalba"><button data-l="lt">LT</button><button data-l="ru">RU</button><button data-l="en">EN</button></div>
+      <button class="burger" aria-label="Meniu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <div class="wrap">
+      <a href="#kainos" data-i="m1">Kainos</a>
+      <a href="#skaiciuokle" data-i="m2">Skaičiuoklė</a>
+      <a href="#etapai" data-i="m3">Etapai</a>
+      <a href="projektai.html" data-i="m4">Objektai</a>
+      <a href="#duk" data-i="m5">DUK</a>
+      <a href="#kontaktai" data-i="m6">Kontaktai</a>
+      <a href="tel:+37060000000">+370 600 00000</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ================= 1. HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1 data-i="h1">Pastatysime jūsų namą nuo geodezijos iki rakto be brigadų paieškos</h1>
+      <p class="lead" data-i="h1sub">10 metų statome individualius namus visoje Lietuvoje. Užbaigėme daugiau nei 100 objektų</p>
+      <div class="hero-photo"><img src="img/namas-3.svg" alt="Užbaigtas individualus namas"></div>
+    </div>
+    <div class="hero-anchors">
+      <div class="anchor"><b>10</b><span data-i="a1">metų statome individualius namus</span></div>
+      <div class="anchor"><b>100+</b><span data-i="a2">užbaigtų objektų</span></div>
+      <div class="anchor"><b>1</b><span data-i="a3">rangovas nuo pamatų iki apdailos</span></div>
+      <div class="anchor"><b>LT</b><span data-i="a4">dirbame visoje Lietuvoje</span></div>
+    </div>
+    <form class="form-box lead-form" novalidate>
+      <div class="form-body">
+        <h3 data-i="f1t">Nemokama konsultacija dėl jūsų namo</h3>
+        <p class="muted" data-i="f1s">Paskambinsime, aptarsime projektą, biudžetą ir terminus</p>
+        <div class="channels" role="group"><button type="button" class="on" data-i="ch1">Skambutis</button><button type="button">WhatsApp</button><button type="button">Viber</button></div>
+        <input id="tel-hero" class="field" type="tel" inputmode="tel" placeholder="+370 6__ _____" aria-label="Telefonas">
+        <div class="consent"><input id="c-hero" type="checkbox"><label for="c-hero" data-i="cons">Sutinku su <a href="consent.html">duomenų tvarkymu</a> pagal <a href="policy.html">privatumo politiką</a></label></div>
+        <p class="err" data-i="err">Įveskite telefono numerį ir pažymėkite sutikimą</p>
+        <button class="btn" type="submit"><span data-i="b1">Gauti konsultaciją</span><span class="btn-badge" data-i="p1">nemokamai</span></button>
+      </div>
+      <div class="form-ok"><b data-i="ok1">Ačiū, užklausa gauta</b><p data-i="ok2">Paskambinsime per 15 minučių darbo metu</p></div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= 2. GALERIJA ================= -->
+<section class="tight" style="padding-top:24px">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <h2 data-i="g1">Daugiau nei 100 mūsų namų jau stovi visoje Lietuvoje</h2>
+      </div>
+      <div class="slider-nav"><button type="button" data-dir="-1" aria-label="Atgal">←</button><button type="button" data-dir="1" aria-label="Pirmyn">→</button></div>
+    </div>
+    <div class="track" id="track">
+      <div class="slide"><figure><img src="img/namas-1.svg" alt=""></figure><figcaption><b data-i="gs1">Vieno aukšto namas, 128 m²</b><span data-i="gl1">Vilniaus r.</span></figcaption></div>
+      <div class="slide"><figure><img src="img/namas-6.svg" alt=""></figure><figcaption><b data-i="gs2">Dviejų aukštų namas, 186 m²</b><span data-i="gl2">Kaunas</span></figcaption></div>
+      <div class="slide"><figure><img src="img/namas-2.svg" alt=""></figure><figcaption><b data-i="gs3">Namas su garažu, 154 m²</b><span data-i="gl3">Klaipėdos r.</span></figcaption></div>
+      <div class="slide"><figure><img src="img/namas-7.svg" alt=""></figure><figcaption><b data-i="gs4">Dviejų aukštų namas, 210 m²</b><span data-i="gl4">Trakai</span></figcaption></div>
+      <div class="slide"><figure><img src="img/namas-4.svg" alt=""></figure><figcaption><b data-i="gs5">Vieno aukšto namas, 96 m²</b><span data-i="gl5">Šiauliai</span></figcaption></div>
+    </div>
+    <a class="link-more" href="projektai.html"><span data-i="gmore">Visi užbaigti objektai</span> →</a>
+  </div>
+</section>
+
+<!-- ================= 3. KAINOS ================= -->
+<section class="prices" id="kainos">
+  <div class="wrap">
+    <h2 data-i="pr1">Statybos kaina nuo 650 €/m² pagal namo baigtumą</h2>
+    <p class="sub" data-i="pr2">Tikslią sumą skaičiuojame pagal jūsų projektą ir sklypą</p>
+    <div class="plans">
+      <div class="plan">
+        <span class="pct" data-i="pl1p">Namo dėžutė</span>
+        <div class="price"><span data-i="from">nuo</span> 650 €<small>/m²</small></div>
+        <span class="vat" data-i="vat">su PVM</span>
+        <ul>
+          <li data-i="pl1a">Geodezija ir pamatai</li>
+          <li data-i="pl1b">Sienos, perdangos ir stogas</li>
+          <li data-i="pl1c">Langai ir lauko durys</li>
+        </ul>
+        <a class="btn ghost" href="#skaiciuokle" data-plan="box"><span data-i="pl1btn">Skaičiuoti dėžutės kainą</span></a>
+      </div>
+      <div class="plan pop">
+        <span class="tag" data-i="poptag">Populiarus</span>
+        <span class="pct" data-i="pl2p">Dalinė apdaila, 85%</span>
+        <div class="price"><span data-i="from">nuo</span> 1000 €<small>/m²</small></div>
+        <span class="vat" data-i="vat">su PVM</span>
+        <ul>
+          <li data-i="pl2a">Viskas iš namo dėžutės</li>
+          <li data-i="pl2b">Fasadas ir šiltinimas</li>
+          <li data-i="pl2c">Šildymas, vėdinimas, elektra, vanduo</li>
+          <li data-i="pl2d">Tinkas, grindų pagrindas ir namo pridavimas</li>
+        </ul>
+        <a class="btn" href="#skaiciuokle" data-plan="85"><span data-i="pl2btn">Skaičiuoti 85% kainą</span></a>
+      </div>
+      <div class="plan">
+        <span class="pct" data-i="pl3p">Iki rakto, 100%</span>
+        <div class="price"><span data-i="from">nuo</span> 1400 €<small>/m²</small></div>
+        <span class="vat" data-i="vat">su PVM</span>
+        <ul>
+          <li data-i="pl3a">Viskas iš dalinės apdailos</li>
+          <li data-i="pl3b">Grindys, dažymas, vidaus durys</li>
+          <li data-i="pl3c">Santechnika ir laiptai</li>
+          <li data-i="pl3d">Įsikeliate su baldais</li>
+        </ul>
+        <a class="btn ghost" href="#skaiciuokle" data-plan="100"><span data-i="pl3btn">Skaičiuoti namą iki rakto</span></a>
+      </div>
+    </div>
+    <p class="note" data-i="prnote">Kainos nurodytos su PVM. Projektą, statybos leidimą ir kiemo įrengimą galime įtraukti į tą pačią sutartį</p>
+  </div>
+</section>
+
+<!-- ================= 4. SKAIČIUOKLĖ (KVIZAS) ================= -->
+<section class="quiz center" id="skaiciuokle">
+  <div class="wrap">
+    <h2 data-i="q1">Sužinokite savo namo statybos kainą per 1 minutę</h2>
+    <p class="sub" data-i="q2">Atsakykite į 3 klausimus, o skaičiavimą atsiųsime telefonu ar žinute</p>
+    <div class="quiz-box" id="quizBox">
+      <div class="q-body">
+        <div class="progress"><i class="on"></i><i></i><i></i></div>
+        <!-- 1 -->
+        <div class="q-step on" data-step="1">
+          <div class="q-count" data-i="qs1c">Klausimas 1 iš 3</div>
+          <h3 data-i="qs1">Kokio baigtumo namo jums reikia?</h3>
+          <div class="opts">
+            <div class="opt"><input type="radio" name="q1" id="q1a" value="box"><label for="q1a"><b data-i="o1a">Namo dėžutė</b><span data-i="o1as">Pamatai, sienos, stogas, langai</span></label></div>
+            <div class="opt"><input type="radio" name="q1" id="q1b" value="85"><label for="q1b"><b data-i="o1b">Dalinė apdaila, 85%</b><span data-i="o1bs">Su inžinerija ir fasadu</span></label></div>
+            <div class="opt"><input type="radio" name="q1" id="q1c" value="100"><label for="q1c"><b data-i="o1c">Iki rakto, 100%</b><span data-i="o1cs">Įsikeliate iškart</span></label></div>
+            <div class="opt"><input type="radio" name="q1" id="q1d" value="unk"><label for="q1d"><b data-i="o1d">Dar nežinau</b><span data-i="o1ds">Padėsime pasirinkti</span></label></div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="q-step" data-step="2">
+          <div class="q-count" data-i="qs2c">Klausimas 2 iš 3</div>
+          <h3 data-i="qs2">Koks namo plotas ir ar turite projektą?</h3>
+          <div class="area">
+            <div class="area-val"><span id="areaOut">140</span> <small>m²</small></div>
+            <input type="range" id="area" min="60" max="300" step="5" value="140" aria-label="Plotas">
+            <div class="range-legend"><span>60 m²</span><span>300 m²</span></div>
+          </div>
+          <span class="q-label" data-i="qproj">Projektas</span>
+          <div class="opts three">
+            <div class="opt"><input type="radio" name="q2" id="q2a" value="yes"><label for="q2a"><b data-i="o2a">Turiu projektą</b></label></div>
+            <div class="opt"><input type="radio" name="q2" id="q2b" value="need"><label for="q2b"><b data-i="o2b">Reikia projekto</b></label></div>
+            <div class="opt"><input type="radio" name="q2" id="q2c" value="idea"><label for="q2c"><b data-i="o2c">Turiu tik idėją</b></label></div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="q-step" data-step="3">
+          <div class="q-count" data-i="qs3c">Klausimas 3 iš 3</div>
+          <h3 data-i="qs3">Kur atsiųsti jūsų namo skaičiavimą?</h3>
+          <div class="q-final" id="qFinal">
+            <div class="channels" role="group"><button type="button" class="on" data-i="ch1">Skambutis</button><button type="button">WhatsApp</button><button type="button">Viber</button></div>
+            <input id="tel-quiz" class="field" type="tel" inputmode="tel" placeholder="+370 6__ _____" aria-label="Telefonas">
+            <p class="q-hint" data-i="qhint">Skaičiavimą parengiame per 1 darbo dieną</p>
+          </div>
+          <div class="consent"><input id="c-quiz" type="checkbox"><label for="c-quiz" data-i="cons">Sutinku su <a href="consent.html">duomenų tvarkymu</a> pagal <a href="policy.html">privatumo politiką</a></label></div>
+          <p class="err" data-i="err" style="margin-top:10px">Įveskite telefono numerį ir pažymėkite sutikimą</p>
+        </div>
+        <div class="q-nav">
+          <button type="button" class="q-back" id="qBack" hidden><span data-i="qback">← Atgal</span></button>
+          <span></span>
+          <button type="button" class="btn light" id="qNext"><span id="qNextTxt" data-i="qnext">Toliau</span><span class="btn-badge" id="qBadge" hidden data-i="p2">be įsipareigojimų</span></button>
+        </div>
+      </div>
+      <div class="q-done"><b data-i="qd1">Ačiū, skaičiavimą jau ruošiame</b><p data-i="qd2">Paskambinsime per 15 minučių darbo metu ir patikslinsime detales</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. ETAPAI ================= -->
+<section id="etapai">
+  <div class="wrap">
+    <h2 data-i="st1">Jūs priimate sprendimus, darbus organizuojame mes</h2>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><div><h3 data-i="s1t">Skambutis per 15 minučių</h3><p data-i="s1p">Aptariame sklypą, projektą ir biudžetą</p></div></div>
+      <div class="step"><span class="n">2</span><div><h3 data-i="s2t">Sklypo apžiūra</h3><p data-i="s2p">Atvažiuojame nemokamai su statybos vadovu</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3 data-i="s3t">Sąmata ir sutartis</h3><p data-i="s3p">Darbus, kainą ir terminus surašome raštu</p></div></div>
+      <div class="step"><span class="n">4</span><div><h3 data-i="s4t">Projektas ir leidimas</h3><p data-i="s4p">Jei reikia, dokumentus sutvarkome patys</p></div></div>
+      <div class="step"><span class="n">5</span><div><h3 data-i="s5t">Statyba etapais</h3><p data-i="s5p">Kas savaitę siunčiame nuotraukų ataskaitą</p></div></div>
+      <div class="step"><span class="n">6</span><div><h3 data-i="s6t">Etapo priėmimas</h3><p data-i="s6p">Kiekvieną etapą priimate pagal aktą</p></div></div>
+      <div class="step last"><span class="n">7</span><div><h3 data-i="s7t">Priduodame namą ir perduodame raktus</h3><p data-i="s7p">Kartu su visais dokumentais ir garantija</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. APSAUGA NUO RIZIKOS ================= -->
+<section class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-side">
+      <h2 data-i="tr1">Mokate tik už atliktą ir priimtą etapą</h2>
+      <figure><img src="img/namas-9.svg" alt=""></figure>
+      <div><a class="btn" href="#kontaktai"><span data-i="tr2">Aptarti sutarties sąlygas</span></a></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg></span><div><h3 data-i="f1h">Kaina ir terminai sutartyje</h3><p data-i="f1p">Darbų sąrašą, sumą ir datas surašome prieš pradedant statybas</p></div></div>
+      <div class="fact"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><div><h3 data-i="f2h">Mokėjimai etapais</h3><p data-i="f2p">Kitą sumą mokate tik pasirašę etapo priėmimo aktą</p></div></div>
+      <div class="fact"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span><div><h3 data-i="f3h">Atestuotas statybos vadovas</h3><p data-i="f3p">Prižiūri darbus ir pildo statybos žurnalą</p></div></div>
+      <div class="fact"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></span><div><h3 data-i="f4h">Nuotraukos kas savaitę</h3><p data-i="f4p">Matote statybą, net jei gyvenate kitame mieste ar užsienyje</p></div></div>
+      <div class="fact"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><div><h3 data-i="f5h">5 metų garantija</h3><p data-i="f5p">Konstrukcijoms ir darbams, kaip numato Civilinis kodeksas</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. DARBŲ APIMTIS ================= -->
+<section>
+  <div class="wrap">
+    <h2 data-i="sc1">Nuo geodezijos iki vidaus apdailos dirba viena komanda</h2>
+    <p class="sub" data-i="sc2">Jums nereikia ieškoti meistrų kiekvienam etapui ir derinti jų tarpusavyje</p>
+    <div class="scope-list">
+      <div class="scope-item"><figure><img src="img/etapas-planas.svg" alt=""></figure><div><span class="k" data-i="sk1k">Pradžia</span><h3 data-i="sk1h">Geodezija, projektas ir leidimas</h3><p data-i="sk1p">Nužymime sklypą, parengiame projektą ir gauname statybos leidimą</p></div></div>
+      <div class="scope-item"><figure><img src="img/etapas-sienos.svg" alt=""></figure><div><span class="k" data-i="sk2k">Konstrukcijos</span><h3 data-i="sk2h">Pamatai, sienos ir perdangos</h3><p data-i="sk2p">Statome mūrinius ir karkasinius namus, atitinkančius A++ energinę klasę</p></div></div>
+      <div class="scope-item"><figure><img src="img/etapas-stogas.svg" alt=""></figure><div><span class="k" data-i="sk3k">Išorė</span><h3 data-i="sk3h">Stogas, langai ir fasadas</h3><p data-i="sk3p">Namas uždaromas iki žiemos, todėl vidaus darbai gali vykti visus metus</p></div></div>
+      <div class="scope-item"><figure><img src="img/etapas-vidus.svg" alt=""></figure><div><span class="k" data-i="sk4k">Vidus</span><h3 data-i="sk4h">Inžinerija ir vidaus apdaila</h3><p data-i="sk4p">Šildymas, vėdinimas, elektra, santechnika ir apdaila, po kurios belieka įsikelti</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. ATSILIEPIMAI ================= -->
+<section class="reviews">
+  <div class="wrap">
+    <p class="big-quote" data-i="rv1">„Namą perėmėme laiku ir be papildomų sąskaitų“</p>
+    <p class="big-quote-by" data-i="rv1by">Tomas ir Ieva, namas Vilniaus r., 148 m²</p>
+    <div class="rev-grid">
+      <div class="rev"><q data-i="r1">Gyvename Norvegijoje, statybą stebėjome iš nuotraukų. Atvažiavome tik priimti namo</q><div class="who"><span class="ava">M</span><div><b>Mindaugas</b><span data-i="r1w">Kauno r., iki rakto</span></div></div></div>
+      <div class="rev"><q data-i="r2">Kiekvieną etapą priimdavome pagal aktą, todėl visada žinojome, už ką mokame</q><div class="who"><span class="ava">R</span><div><b>Rūta</b><span data-i="r2w">Klaipėda, 85% baigtumas</span></div></div></div>
+      <div class="rev"><q data-i="r3">Projektą ir leidimą sutvarkė patys, mums liko tik išsirinkti apdailą</q><div class="who"><span class="ava">A</span><div><b>Andrius</b><span data-i="r3w">Trakai, iki rakto</span></div></div></div>
+    </div>
+    <a class="link-more" href="projektai.html"><span data-i="rvmore">Pažiūrėti užbaigtus namus</span> →</a>
+  </div>
+</section>
+
+<!-- ================= 9. PALYGINIMAS ================= -->
+<section>
+  <div class="wrap">
+    <h2 data-i="cp1">Viena atsakinga įmonė ar kelios brigados</h2>
+    <div class="compare">
+      <div class="col them">
+        <h3 data-i="cpt">Kai samdote atskiras brigadas</h3>
+        <ul>
+          <li data-i="cpt1">Kiekvienam etapui meistrų ieškote patys</li>
+          <li data-i="cpt2">Dėl klaidų brigados kaltina viena kitą</li>
+          <li data-i="cpt3">Kaina auga po kiekvieno etapo</li>
+          <li data-i="cpt4">Dokumentus ir pridavimą tvarkote patys</li>
+        </ul>
+      </div>
+      <div class="col us">
+        <h3 data-i="cpu">Kai statote su mumis</h3>
+        <ul>
+          <li data-i="cpu1">Vienas rangovas nuo pamatų iki raktų</li>
+          <li data-i="cpu2">Klaidas taisome savo sąskaita</li>
+          <li data-i="cpu3">Kaina ir terminai įrašyti sutartyje</li>
+          <li data-i="cpu4">Dokumentus ir pridavimą tvarkome mes</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cta-row"><a class="btn" href="#skaiciuokle"><span data-i="cpbtn">Statyti su vienu rangovu</span></a></div>
+  </div>
+</section>
+
+<!-- ================= 10. DUK ================= -->
+<section class="faq center" id="duk">
+  <div class="wrap">
+    <h2 data-i="fq">Klausimai ir atsakymai</h2>
+    <div class="faq-list">
+      <details><summary data-i="fq1">Kiek laiko trunka namo statyba?</summary><p data-i="fa1">Namo dėžutę pastatome per 3-4 mėnesius, namą iki rakto per 8-12 mėnesių. Terminas priklauso nuo ploto ir sezono</p></details>
+      <details><summary data-i="fq2">Ar galite statyti pagal mano projektą?</summary><p data-i="fa2">Taip. Jei projekto dar nėra, padėsime jį parengti ir gauti statybos leidimą</p></details>
+      <details><summary data-i="fq3">Ar kaina gali pasikeisti statybų metu?</summary><p data-i="fa3">Kaina ir darbų sąrašas įrašomi į sutartį. Ji keičiasi tik tada, kai jūs nusprendžiate pakeisti sprendimus</p></details>
+      <details><summary data-i="fq4">Kaip vyksta atsiskaitymas?</summary><p data-i="fa4">Mokate etapais, po kiekvieno priimto etapo. Avanso dydį aptariame prieš pasirašant sutartį</p></details>
+      <details><summary data-i="fq5">Ar dirbate su būsto paskola?</summary><p data-i="fa5">Taip. Parengiame sąmatą ir dokumentus, kurių reikia bankui</p></details>
+      <details><summary data-i="fq6">Kokius namus statote?</summary><p data-i="fa6">Mūrinius ir karkasinius, vieno ir dviejų aukštų, nuo 60 iki 300 m²</p></details>
+      <details><summary data-i="fq7">Kokia suteikiama garantija?</summary><p data-i="fa7">5 metai konstrukcijoms ir darbams, kaip numato Civilinis kodeksas</p></details>
+      <details><summary data-i="fq8">Ar statote ne tik Vilniuje?</summary><p data-i="fa8">Dirbame visoje Lietuvoje. Pirmas susitikimas ir sklypo apžiūra nemokami</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11. FINALINIS KVIETIMAS ================= -->
+<section class="final" id="kontaktai">
+  <div class="wrap final-grid">
+    <div class="final-text">
+      <h2 data-i="fn1">Papasakokite apie savo namą, o mes pasakysime, nuo ko pradėti</h2>
+      <p class="sub" data-i="fn2">Konsultacija nemokama ir jūsų niekuo neįpareigoja</p>
+      <ul class="final-points">
+        <li><b data-i="fp1b">15 min</b><span data-i="fp1">per tiek laiko paskambiname darbo metu</span></li>
+        <li><b data-i="fp2b">0 €</b><span data-i="fp2">sklypo apžiūra visoje Lietuvoje</span></li>
+        <li><b><a href="tel:+37060000000">+370 600 00000</a></b><span data-i="fp3">arba paskambinkite patys</span></li>
+      </ul>
+    </div>
+    <form class="form-box lead-form" novalidate>
+      <div class="form-body">
+        <h3 data-i="fnf">Kur jums paskambinti?</h3>
+        <div class="channels" role="group"><button type="button" class="on" data-i="ch1">Skambutis</button><button type="button">WhatsApp</button><button type="button">Viber</button></div>
+        <input id="tel-final" class="field" type="tel" inputmode="tel" placeholder="+370 6__ _____" aria-label="Telefonas">
+        <div class="consent"><input id="c-final" type="checkbox"><label for="c-final" data-i="cons">Sutinku su <a href="consent.html">duomenų tvarkymu</a> pagal <a href="policy.html">privatumo politiką</a></label></div>
+        <p class="err" data-i="err">Įveskite telefono numerį ir pažymėkite sutikimą</p>
+        <button class="btn" type="submit"><span data-i="b1">Gauti konsultaciją</span><span class="btn-badge" data-i="p3">atsakome per 15 min</span></button>
+      </div>
+      <div class="form-ok"><b data-i="ok1">Ačiū, užklausa gauta</b><p data-i="ok2">Paskambinsime per 15 minučių darbo metu</p></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ================= PODVALAS ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></i><span data-i="logo">JŪSŲ LOGOTIPAS</span></a>
+        <p data-i="ft1">Individualių namų statyba visoje Lietuvoje nuo geodezijos iki rakto</p>
+      </div>
+      <div>
+        <h4 data-i="ft2">Kontaktai</h4>
+        <ul>
+          <li><a href="tel:+37060000000">+370 600 00000</a></li>
+          <li><a href="mailto:info@pavyzdys.lt">info@pavyzdys.lt</a></li>
+          <li data-i="ft3">I-V 8:00-18:00</li>
+          <li><a href="#" data-i="ft4">Facebook</a> · <a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="map"><div><div class="pin"></div><b data-i="ft5">Biuro adresas, Vilnius</b><small data-i="ft6">Čia bus Google žemėlapis</small></div></div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i="ft7">© 2026 Įmonės pavadinimas, įmonės kodas 000000000</span>
+      <nav><a href="policy.html" data-i="ft8">Privatumo politika</a><a href="consent.html" data-i="ft9">Sutikimas tvarkyti asmens duomenis</a></nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= RYŠIO VALDIKLIS ================= -->
+<div class="fab">
+  <div class="fab-list">
+    <a href="#"><i style="background:#25d366"></i>WhatsApp</a>
+    <a href="#"><i style="background:#7360f2"></i>Viber</a>
+    <a href="#"><i style="background:#229ed9"></i>Telegram</a>
+    <a href="tel:+37060000000"><i style="background:var(--accent)"></i><span data-i="fabcall">Paskambinti</span></a>
+  </div>
+  <div class="fab-tip" data-i="fabtip">Čia atsakome 3 kartus greičiau</div>
+  <button class="fab-btn" aria-label="Susisiekti" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" stroke-linejoin="round"/></svg></button>
+</div>
+
+<script>
+window.TITLES={lt:'Individualių namų statyba',ru:'Строительство частных домов',en:'Custom House Construction'};
+window.I18N={
+ru:{
+logo:'ВАШ ЛОГОТИП',m1:'Цены',m2:'Калькулятор',m3:'Этапы',m4:'Объекты',m5:'FAQ',m6:'Контакты',
+h1:'Построим ваш дом от геодезии до ключа без поиска бригад',
+h1sub:'10 лет строим частные дома по всей Литве. Сдали более 100 объектов',
+a1:'лет строим частные дома',a2:'сданных объектов',a3:'подрядчик от фундамента до отделки',a4:'работаем по всей Литве',
+f1t:'Бесплатная консультация по вашему дому',f1s:'Позвоним, обсудим проект, бюджет и сроки',ch1:'Звонок',
+cons:'Согласен на <a href="consent.html">обработку данных</a> по <a href="policy.html">политике конфиденциальности</a>',
+err:'Введите номер телефона и отметьте согласие',b1:'Получить консультацию',p1:'бесплатно',ok1:'Спасибо, заявка получена',ok2:'Позвоним в течение 15 минут в рабочее время',
+g1:'Более 100 наших домов уже стоят по всей Литве',gs1:'Одноэтажный дом, 128 м²',gl1:'Вильнюсский р-н',gs2:'Двухэтажный дом, 186 м²',gl2:'Каунас',gs3:'Дом с гаражом, 154 м²',gl3:'Клайпедский р-н',gs4:'Двухэтажный дом, 210 м²',gl4:'Тракай',gs5:'Одноэтажный дом, 96 м²',gl5:'Шяуляй',gmore:'Все сданные объекты',
+pr1:'Цена строительства от 650 €/м² в зависимости от готовности',pr2:'Точную сумму считаем по вашему проекту и участку',from:'от',vat:'с НДС',
+pl1p:'Коробка дома',pl1a:'Геодезия и фундамент',pl1b:'Стены, перекрытия и крыша',pl1c:'Окна и входные двери',pl1btn:'Рассчитать коробку',
+poptag:'Популярный',pl2p:'Частичная отделка, 85%',pl2a:'Всё из коробки дома',pl2b:'Фасад и утепление',pl2c:'Отопление, вентиляция, электрика, вода',pl2d:'Штукатурка, основание пола и сдача дома',pl2btn:'Рассчитать 85%',
+pl3p:'Под ключ, 100%',pl3a:'Всё из частичной отделки',pl3b:'Полы, покраска, межкомнатные двери',pl3c:'Сантехника и лестница',pl3d:'Заезжаете с мебелью',pl3btn:'Рассчитать дом под ключ',
+prnote:'Цены указаны с НДС. Проект, разрешение на строительство и благоустройство двора можно включить в тот же договор',
+q1:'Узнайте стоимость строительства вашего дома за 1 минуту',q2:'Ответьте на 3 вопроса, а расчёт пришлём звонком или сообщением',
+qs1c:'Вопрос 1 из 3',qs1:'Какая готовность дома вам нужна?',o1a:'Коробка дома',o1as:'Фундамент, стены, крыша, окна',o1b:'Частичная отделка, 85%',o1bs:'С инженерией и фасадом',o1c:'Под ключ, 100%',o1cs:'Заезжаете сразу',o1d:'Пока не знаю',o1ds:'Поможем выбрать',
+qs2c:'Вопрос 2 из 3',qs2:'Какая площадь дома и есть ли проект?',qproj:'Проект',o2a:'Есть проект',o2b:'Нужен проект',o2c:'Есть только идея',
+qs3c:'Вопрос 3 из 3',qs3:'Куда прислать расчёт вашего дома?',qhint:'Расчёт готовим за 1 рабочий день',qback:'← Назад',qnext:'Далее',qsend:'Получить расчёт',p2:'без обязательств',
+qd1:'Спасибо, расчёт уже готовим',qd2:'Позвоним в течение 15 минут в рабочее время и уточним детали',
+st1:'Вы принимаете решения, работы организуем мы',s1t:'Звонок за 15 минут',s1p:'Обсуждаем участок, проект и бюджет',s2t:'Осмотр участка',s2p:'Приезжаем бесплатно с руководителем стройки',s3t:'Смета и договор',s3p:'Работы, цену и сроки фиксируем письменно',s4t:'Проект и разрешение',s4p:'Если нужно, документы оформляем сами',s5t:'Стройка по этапам',s5p:'Каждую неделю присылаем фотоотчёт',s6t:'Приёмка этапа',s6p:'Каждый этап принимаете по акту',s7t:'Сдаём дом и передаём ключи',s7p:'Вместе со всеми документами и гарантией',
+tr1:'Платите только за выполненный и принятый этап',tr2:'Обсудить условия договора',
+f1h:'Цена и сроки в договоре',f1p:'Список работ, сумму и даты фиксируем до начала стройки',f2h:'Оплата по этапам',f2p:'Следующую сумму платите только после акта приёмки',f3h:'Аттестованный руководитель стройки',f3p:'Контролирует работы и ведёт журнал строительства',f4h:'Фотоотчёт каждую неделю',f4p:'Видите стройку, даже если живёте в другом городе или за границей',f5h:'Гарантия 5 лет',f5p:'На конструкции и работы, как предусматривает Гражданский кодекс',
+sc1:'От геодезии до внутренней отделки работает одна команда',sc2:'Вам не нужно искать мастеров на каждый этап и согласовывать их между собой',
+sk1k:'Старт',sk1h:'Геодезия, проект и разрешение',sk1p:'Размечаем участок, готовим проект и получаем разрешение на строительство',sk2k:'Конструкции',sk2h:'Фундамент, стены и перекрытия',sk2p:'Строим каменные и каркасные дома класса энергоэффективности A++',sk3k:'Снаружи',sk3h:'Крыша, окна и фасад',sk3p:'Закрываем дом до зимы, поэтому внутренние работы идут круглый год',sk4k:'Внутри',sk4h:'Инженерия и внутренняя отделка',sk4p:'Отопление, вентиляция, электрика, сантехника и отделка, после которой остаётся заехать',
+rv1:'«Приняли дом вовремя и без дополнительных счетов»',rv1by:'Томас и Иева, дом в Вильнюсском р-не, 148 м²',
+r1:'Живём в Норвегии, стройку смотрели по фото. Приехали только принять дом',r1w:'Каунасский р-н, под ключ',r2:'Каждый этап принимали по акту, поэтому всегда знали, за что платим',r2w:'Клайпеда, готовность 85%',r3:'Проект и разрешение оформили сами, нам осталось выбрать отделку',r3w:'Тракай, под ключ',rvmore:'Посмотреть сданные дома',
+cp1:'Одна ответственная компания или несколько бригад',cpt:'Когда нанимаете отдельные бригады',cpt1:'Мастеров на каждый этап ищете сами',cpt2:'За ошибки бригады винят друг друга',cpt3:'Цена растёт после каждого этапа',cpt4:'Документы и сдачу дома оформляете сами',
+cpu:'Когда строите с нами',cpu1:'Один подрядчик от фундамента до ключей',cpu2:'Ошибки исправляем за свой счёт',cpu3:'Цена и сроки записаны в договоре',cpu4:'Документы и сдачу дома берём на себя',cpbtn:'Строить с одним подрядчиком',
+fq:'Вопросы и ответы',fq1:'Сколько длится строительство дома?',fa1:'Коробку строим за 3-4 месяца, дом под ключ за 8-12 месяцев. Срок зависит от площади и сезона',fq2:'Можете строить по моему проекту?',fa2:'Да. Если проекта ещё нет, поможем его подготовить и получить разрешение на строительство',fq3:'Может ли цена измениться во время стройки?',fa3:'Цена и список работ записываются в договор. Она меняется, только если вы решите изменить решения',fq4:'Как проходит оплата?',fa4:'Платите по этапам, после каждого принятого этапа. Размер аванса обсуждаем до подписания договора',fq5:'Работаете с ипотекой?',fa5:'Да. Готовим смету и документы, которые нужны банку',fq6:'Какие дома вы строите?',fa6:'Каменные и каркасные, одно- и двухэтажные, от 60 до 300 м²',fq7:'Какая гарантия?',fa7:'5 лет на конструкции и работы, как предусматривает Гражданский кодекс',fq8:'Строите не только в Вильнюсе?',fa8:'Работаем по всей Литве. Первая встреча и осмотр участка бесплатны',
+fn1:'Расскажите о своём доме, а мы подскажем, с чего начать',fn2:'Консультация бесплатная и ни к чему вас не обязывает',p3:'ответим за 15 мин',fp1b:'15 мин',fp1:'за столько перезваниваем в рабочее время',fp2b:'0 €',fp2:'осмотр участка по всей Литве',fp3:'или позвоните сами',fnf:'Куда вам позвонить?',
+ft1:'Строительство частных домов по всей Литве от геодезии до ключа',ft2:'Контакты',ft3:'Пн-Пт 8:00-18:00',ft4:'Facebook',ft5:'Адрес офиса, Вильнюс',ft6:'Здесь будет карта Google',ft7:'© 2026 Название компании, код 000000000',ft8:'Политика конфиденциальности',ft9:'Согласие на обработку персональных данных',
+fabcall:'Позвонить',fabtip:'Здесь отвечаем в 3 раза быстрее'
+},
+en:{
+logo:'YOUR LOGO',m1:'Prices',m2:'Calculator',m3:'Process',m4:'Projects',m5:'FAQ',m6:'Contacts',
+h1:'We build your house from land survey to keys, no crews to hire',
+h1sub:'10 years building custom houses across Lithuania. Over 100 projects completed',
+a1:'years building custom houses',a2:'completed projects',a3:'contractor from foundation to finish',a4:'we work across Lithuania',
+f1t:'Free consultation about your house',f1s:'We call you to discuss the design, budget and timeline',ch1:'Call',
+cons:'I agree to <a href="consent.html">data processing</a> under the <a href="policy.html">privacy policy</a>',
+err:'Enter your phone number and tick the consent box',b1:'Get a consultation',p1:'free',ok1:'Thank you, request received',ok2:'We will call you within 15 minutes during working hours',
+g1:'Over 100 of our houses already stand across Lithuania',gs1:'Single-storey house, 128 m²',gl1:'Vilnius district',gs2:'Two-storey house, 186 m²',gl2:'Kaunas',gs3:'House with garage, 154 m²',gl3:'Klaipėda district',gs4:'Two-storey house, 210 m²',gl4:'Trakai',gs5:'Single-storey house, 96 m²',gl5:'Šiauliai',gmore:'All completed projects',
+pr1:'Construction from 650 €/m² depending on completion level',pr2:'We calculate the exact sum for your design and plot',from:'from',vat:'incl. VAT',
+pl1p:'Shell house',pl1a:'Land survey and foundation',pl1b:'Walls, floors and roof',pl1c:'Windows and entrance doors',pl1btn:'Price the shell',
+poptag:'Popular',pl2p:'Partial finish, 85%',pl2a:'Everything in the shell',pl2b:'Facade and insulation',pl2c:'Heating, ventilation, power, water',pl2d:'Plaster, floor base and handover',pl2btn:'Price the 85% option',
+pl3p:'Turnkey, 100%',pl3a:'Everything in partial finish',pl3b:'Flooring, painting, interior doors',pl3c:'Plumbing fixtures and stairs',pl3d:'Move in with your furniture',pl3btn:'Price a turnkey house',
+prnote:'Prices include VAT. Design, building permit and landscaping can go into the same contract',
+q1:'Find out what your house will cost in 1 minute',q2:'Answer 3 questions and we will send the estimate by call or message',
+qs1c:'Question 1 of 3',qs1:'What completion level do you need?',o1a:'Shell house',o1as:'Foundation, walls, roof, windows',o1b:'Partial finish, 85%',o1bs:'With utilities and facade',o1c:'Turnkey, 100%',o1cs:'Move in right away',o1d:'Not sure yet',o1ds:'We will help you choose',
+qs2c:'Question 2 of 3',qs2:'How big is the house and do you have a design?',qproj:'Design',o2a:'I have a design',o2b:'I need a design',o2c:'Just an idea',
+qs3c:'Question 3 of 3',qs3:'Where should we send your estimate?',qhint:'We prepare the estimate within 1 working day',qback:'← Back',qnext:'Next',qsend:'Get my estimate',p2:'no obligation',
+qd1:'Thank you, we are preparing your estimate',qd2:'We will call within 15 minutes during working hours to clarify details',
+st1:'You make the decisions, we organise the work',s1t:'A call within 15 minutes',s1p:'We discuss the plot, design and budget',s2t:'Plot visit',s2p:'We come for free with the site manager',s3t:'Estimate and contract',s3p:'Works, price and deadlines in writing',s4t:'Design and permit',s4p:'If needed, we handle the paperwork',s5t:'Construction in stages',s5p:'A photo report every week',s6t:'Stage acceptance',s6p:'You accept each stage with a signed act',s7t:'We hand over the house and the keys',s7p:'With all documents and the warranty',
+tr1:'You pay only for completed and accepted stages',tr2:'Discuss the contract terms',
+f1h:'Price and deadlines in the contract',f1p:'Scope, sum and dates are agreed before work starts',f2h:'Payment by stages',f2p:'You pay the next sum only after signing the acceptance act',f3h:'Certified site manager',f3p:'Supervises the works and keeps the construction log',f4h:'Photos every week',f4p:'You see the build even if you live in another city or abroad',f5h:'5-year warranty',f5p:'On structures and works, as set by the Civil Code',
+sc1:'One team from land survey to interior finish',sc2:'No need to find tradesmen for every stage and coordinate them',
+sk1k:'Start',sk1h:'Survey, design and permit',sk1p:'We mark out the plot, prepare the design and obtain the building permit',sk2k:'Structure',sk2h:'Foundation, walls and floors',sk2p:'Masonry and timber-frame houses meeting the A++ energy class',sk3k:'Exterior',sk3h:'Roof, windows and facade',sk3p:'The house is closed before winter, so interior work continues all year',sk4k:'Interior',sk4h:'Utilities and interior finish',sk4p:'Heating, ventilation, electrics, plumbing and finishing, ready to move in',
+rv1:'"We got the house on time and with no extra bills"',rv1by:'Tomas and Ieva, house in Vilnius district, 148 m²',
+r1:'We live in Norway and followed the build through photos. We only came to accept the house',r1w:'Kaunas district, turnkey',r2:'We accepted every stage with a signed act, so we always knew what we paid for',r2w:'Klaipėda, 85% finish',r3:'They handled the design and permit, we only had to pick the finishes',r3w:'Trakai, turnkey',rvmore:'See completed houses',
+cp1:'One accountable company or several crews',cpt:'When you hire separate crews',cpt1:'You look for tradesmen for every stage',cpt2:'Crews blame each other for mistakes',cpt3:'The price grows after every stage',cpt4:'You handle documents and handover yourself',
+cpu:'When you build with us',cpu1:'One contractor from foundation to keys',cpu2:'We fix mistakes at our own cost',cpu3:'Price and deadlines are in the contract',cpu4:'We handle documents and handover',cpbtn:'Build with one contractor',
+fq:'Questions and answers',fq1:'How long does it take to build a house?',fa1:'A shell takes 3-4 months, a turnkey house 8-12 months. It depends on size and season',fq2:'Can you build to my design?',fa2:'Yes. If you have no design yet, we help prepare it and get the building permit',fq3:'Can the price change during construction?',fa3:'The price and scope are written into the contract. It changes only if you decide to change the specification',fq4:'How do payments work?',fa4:'You pay in stages, after each accepted stage. The advance is agreed before signing',fq5:'Do you work with mortgages?',fa5:'Yes. We prepare the estimate and documents your bank needs',fq6:'What houses do you build?',fa6:'Masonry and timber-frame, one or two storeys, from 60 to 300 m²',fq7:'What warranty do you give?',fa7:'5 years on structures and works, as set by the Civil Code',fq8:'Do you build outside Vilnius?',fa8:'We work across Lithuania. The first meeting and plot visit are free',
+fn1:'Tell us about your house and we will tell you where to start',fn2:'The consultation is free and puts you under no obligation',p3:'reply in 15 min',fp1b:'15 min',fp1:'is how fast we call back during working hours',fp2b:'0 €',fp2:'plot visit anywhere in Lithuania',fp3:'or call us yourself',fnf:'Where should we call you?',
+ft1:'Custom house construction across Lithuania, from land survey to keys',ft2:'Contacts',ft3:'Mon-Fri 8:00-18:00',ft4:'Facebook',ft5:'Office address, Vilnius',ft6:'Google map goes here',ft7:'© 2026 Company name, company code 000000000',ft8:'Privacy policy',ft9:'Consent to personal data processing',
+fabcall:'Call us',fabtip:'We reply 3 times faster here'
+}};
+</script>
+<script src="main.js"></script>
+<script>
+/* lt tekstas mygtukui "Gauti skaičiavimą" (kiti vertimai I18N) */
+(function(){
+  var L={lt:'Gauti skaičiavimą'};
+  // galerijos rodyklės
+  var tr=document.getElementById('track');
+  document.querySelectorAll('.slider-nav button').forEach(function(b){b.addEventListener('click',function(){
+    var s=tr.querySelector('.slide');tr.scrollBy({left:(s.offsetWidth+24)*+b.dataset.dir,behavior:'smooth'});});});
+  // kvizas
+  var box=document.getElementById('quizBox'),step=1,steps=box.querySelectorAll('.q-step'),bars=box.querySelectorAll('.progress i');
+  var next=document.getElementById('qNext'),back=document.getElementById('qBack'),txt=document.getElementById('qNextTxt'),badge=document.getElementById('qBadge');
+  var area=document.getElementById('area'),out=document.getElementById('areaOut');
+  area.addEventListener('input',function(){out.textContent=area.value;});
+  function label(){return step===3?(curLang()==='lt'?L.lt:t('qsend')):t('qnext');}
+  function show(){
+    steps.forEach(function(s){s.classList.toggle('on',+s.dataset.step===step);});
+    bars.forEach(function(b,i){b.classList.toggle('on',i<step);});
+    back.hidden=step===1; badge.hidden=step!==3; txt.textContent=label();
+  }
+  document.addEventListener('langchange',function(){txt.textContent=label();});
+  box.addEventListener('change',function(e){
+    if(e.target.name==='q1'&&step===1){setTimeout(function(){step=2;show();},250);}
+  });
+  next.addEventListener('click',function(){
+    if(step===1&&!box.querySelector('input[name=q1]:checked')){box.querySelector('input[name=q1]').focus();return;}
+    if(step<3){step++;show();return;}
+    if(validForm(steps[2]))box.classList.add('done');
+  });
+  back.addEventListener('click',function(){if(step>1){step--;show();}});
+  show();
+})();
+</script>
+
+</body>
+</html>

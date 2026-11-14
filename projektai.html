@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Užbaigti namai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<!-- Objektų aprašai ir nuotraukos yra laikini: keiskite img/*.svg tikromis nuotraukomis ir tekstus tikrais duomenimis -->
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></i><span data-i="logo">JŪSŲ LOGOTIPAS</span></a>
+    <nav class="menu">
+      <a href="index.html#kainos" data-i="m1">Kainos</a>
+      <a href="index.html#skaiciuokle" data-i="m2">Skaičiuoklė</a>
+      <a href="index.html#etapai" data-i="m3">Etapai</a>
+      <a href="projektai.html" data-i="m4" style="color:var(--accent)">Objektai</a>
+      <a href="index.html#duk" data-i="m5">DUK</a>
+      <a href="#kontaktai" data-i="m6">Kontaktai</a>
+    </nav>
+    <div class="nav-right">
+      <a class="phone" href="tel:+37060000000">+370 600 00000</a>
+      <div class="langs" role="group" aria-label="Kalba"><button data-l="lt">LT</button><button data-l="ru">RU</button><button data-l="en">EN</button></div>
+      <button class="burger" aria-label="Meniu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu"><div class="wrap">
+    <a href="index.html#kainos" data-i="m1">Kainos</a>
+    <a href="index.html#skaiciuokle" data-i="m2">Skaičiuoklė</a>
+    <a href="index.html#etapai" data-i="m3">Etapai</a>
+    <a href="projektai.html" data-i="m4">Objektai</a>
+    <a href="index.html#duk" data-i="m5">DUK</a>
+    <a href="#kontaktai" data-i="m6">Kontaktai</a>
+  </div></div>
+</header>
+
+<main>
+  <section class="page-head" style="padding-bottom:36px">
+    <div class="wrap">
+      <h1 data-i="ph1">Daugiau nei 100 užbaigtų namų visoje Lietuvoje</h1>
+      <p class="sub" data-i="ph2">Čia rodome dalį objektų: plotą, vietą, baigtumą ir statybos trukmę</p>
+      <div class="chips" id="chips">
+        <button class="on" data-f="all" data-i="c0">Visi</button>
+        <button data-f="1" data-i="c1">Vieno aukšto</button>
+        <button data-f="2" data-i="c2">Dviejų aukštų</button>
+        <button data-f="85" data-i="c3">Dalinė apdaila 85%</button>
+        <button data-f="100" data-i="c4">Iki rakto</button>
+      </div>
+    </div>
+  </section>
+  <div class="wrap">
+    <div class="obj-grid" id="grid">
+      <article class="obj" data-t="1 100"><figure><img src="img/namas-1.svg" alt=""><span class="badge" data-i="bk">Iki rakto</span></figure><h3 data-i="o1">Vieno aukšto namas su terasa</h3><div class="meta"><span>128 m²</span><span data-i="l1">Vilniaus r.</span><span data-i="d1">10 mėn.</span></div><p data-i="o1p">Mūrinis namas su medine fasado apdaila ir oras-vanduo šildymu</p></article>
+      <article class="obj" data-t="2 85"><figure><img src="img/namas-6.svg" alt=""><span class="badge" data-i="b85">85%</span></figure><h3 data-i="o2">Dviejų aukštų šeimos namas</h3><div class="meta"><span>186 m²</span><span data-i="l2">Kaunas</span><span data-i="d2">7 mėn.</span></div><p data-i="o2p">Keturi miegamieji, du vonios kambariai ir antresolė</p></article>
+      <article class="obj" data-t="1 100"><figure><img src="img/namas-2.svg" alt=""><span class="badge" data-i="bk">Iki rakto</span></figure><h3 data-i="o3">Namas su garažu</h3><div class="meta"><span>154 m²</span><span data-i="l3">Klaipėdos r.</span><span data-i="d3">11 mėn.</span></div><p data-i="o3p">Garažas dviem automobiliams ir geoterminis šildymas</p></article>
+      <article class="obj" data-t="2 100"><figure><img src="img/namas-7.svg" alt=""><span class="badge" data-i="bk">Iki rakto</span></figure><h3 data-i="o4">Modernus dviejų aukštų namas</h3><div class="meta"><span>210 m²</span><span data-i="l4">Trakai</span><span data-i="d4">12 mėn.</span></div><p data-i="o4p">Plokščias stogas, didelės vitrinos ir rekuperacija</p></article>
+      <article class="obj" data-t="1 85"><figure><img src="img/namas-4.svg" alt=""><span class="badge" data-i="b85">85%</span></figure><h3 data-i="o5">Kompaktiškas vieno aukšto namas</h3><div class="meta"><span>96 m²</span><span data-i="l5">Šiauliai</span><span data-i="d5">5 mėn.</span></div><p data-i="o5p">Trys kambariai jaunai šeimai, A++ energinė klasė</p></article>
+      <article class="obj" data-t="2 85"><figure><img src="img/namas-8.svg" alt=""><span class="badge" data-i="b85">85%</span></figure><h3 data-i="o6">Namas su mansarda</h3><div class="meta"><span>172 m²</span><span data-i="l6">Panevėžys</span><span data-i="d6">7 mėn.</span></div><p data-i="o6p">Karkasinis namas, statytas per vieną sezoną</p></article>
+      <article class="obj" data-t="1 100"><figure><img src="img/namas-5.svg" alt=""><span class="badge" data-i="bk">Iki rakto</span></figure><h3 data-i="o7">Vieno aukšto namas prie miško</h3><div class="meta"><span>140 m²</span><span data-i="l7">Vilniaus r.</span><span data-i="d7">10 mėn.</span></div><p data-i="o7p">Klinkerio fasadas ir dengta terasa</p></article>
+      <article class="obj" data-t="2 100"><figure><img src="img/namas-10.svg" alt=""><span class="badge" data-i="bk">Iki rakto</span></figure><h3 data-i="o8">Dviejų aukštų namas su balkonu</h3><div class="meta"><span>198 m²</span><span data-i="l8">Kauno r.</span><span data-i="d8">12 mėn.</span></div><p data-i="o8p">Statyta užsakovams, gyvenantiems užsienyje</p></article>
+      <article class="obj" data-t="1 85"><figure><img src="img/namas-9.svg" alt=""><span class="badge" data-i="b85">85%</span></figure><h3 data-i="o9">Vieno aukšto namas keturšlaičiu stogu</h3><div class="meta"><span>118 m²</span><span data-i="l9">Alytus</span><span data-i="d9">6 mėn.</span></div><p data-i="o9p">Užsakovai apdailą atliko patys pagal mūsų planą</p></article>
+    </div>
+  </div>
+
+  <section class="final" id="kontaktai">
+    <div class="wrap final-grid">
+      <div>
+        <h2 data-i="pfn1">Norite panašaus namo? Paskaičiuosime jo kainą</h2>
+        <p class="sub" data-i="pfn2">Palikite numerį, o mes paskambinsime ir aptarsime jūsų projektą</p>
+      </div>
+      <form class="form-box lead-form" novalidate>
+        <div class="form-body">
+          <div class="channels" role="group"><button type="button" class="on" data-i="ch1">Skambutis</button><button type="button">WhatsApp</button><button type="button">Viber</button></div>
+          <input id="tel-proj" class="field" type="tel" inputmode="tel" placeholder="+370 6__ _____" aria-label="Telefonas">
+          <div class="consent"><input id="c-proj" type="checkbox"><label for="c-proj" data-i="cons">Sutinku su <a href="consent.html">duomenų tvarkymu</a> pagal <a href="policy.html">privatumo politiką</a></label></div>
+          <p class="err" data-i="err">Įveskite telefono numerį ir pažymėkite sutikimą</p>
+          <button class="btn" type="submit"><span data-i="pbtn">Gauti panašaus namo kainą</span></button>
+        </div>
+        <div class="form-ok"><b data-i="ok1">Ačiū, užklausa gauta</b><p data-i="ok2">Paskambinsime per 15 minučių darbo metu</p></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom" style="margin-top:0;border-top:0;padding-top:0">
+      <span data-i="ft7">© 2026 Įmonės pavadinimas, įmonės kodas 000000000</span>
+      <nav><a href="policy.html" data-i="ft8">Privatumo politika</a><a href="consent.html" data-i="ft9">Sutikimas tvarkyti asmens duomenis</a></nav>
+    </div>
+  </div>
+</footer>
+
+<div class="fab">
+  <div class="fab-list">
+    <a href="#"><i style="background:#25d366"></i>WhatsApp</a>
+    <a href="#"><i style="background:#7360f2"></i>Viber</a>
+    <a href="#"><i style="background:#229ed9"></i>Telegram</a>
+    <a href="tel:+37060000000"><i style="background:var(--accent)"></i><span data-i="fabcall">Paskambinti</span></a>
+  </div>
+  <div class="fab-tip" data-i="fabtip">Čia atsakome 3 kartus greičiau</div>
+  <button class="fab-btn" aria-label="Susisiekti" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" stroke-linejoin="round"/></svg></button>
+</div>
+
+<script>
+window.TITLES={lt:'Užbaigti namai',ru:'Сданные дома',en:'Completed Houses'};
+window.I18N={
+ru:{logo:'ВАШ ЛОГОТИП',m1:'Цены',m2:'Калькулятор',m3:'Этапы',m4:'Объекты',m5:'FAQ',m6:'Контакты',
+ph1:'Более 100 сданных домов по всей Литве',ph2:'Здесь показана часть объектов: площадь, место, готовность и срок строительства',
+c0:'Все',c1:'Одноэтажные',c2:'Двухэтажные',c3:'Частичная отделка 85%',c4:'Под ключ',bk:'Под ключ',b85:'85%',
+o1:'Одноэтажный дом с террасой',o1p:'Каменный дом с деревянной отделкой фасада и тепловым насосом воздух-вода',l1:'Вильнюсский р-н',d1:'10 мес.',
+o2:'Двухэтажный семейный дом',o2p:'Четыре спальни, две ванные и антресоль',l2:'Каунас',d2:'7 мес.',
+o3:'Дом с гаражом',o3p:'Гараж на два автомобиля и геотермальное отопление',l3:'Клайпедский р-н',d3:'11 мес.',
+o4:'Современный двухэтажный дом',o4p:'Плоская крыша, панорамные окна и рекуперация',l4:'Тракай',d4:'12 мес.',
+o5:'Компактный одноэтажный дом',o5p:'Три комнаты для молодой семьи, класс A++',l5:'Шяуляй',d5:'5 мес.',
+o6:'Дом с мансардой',o6p:'Каркасный дом, построенный за один сезон',l6:'Паневежис',d6:'7 мес.',
+o7:'Одноэтажный дом у леса',o7p:'Клинкерный фасад и крытая терраса',l7:'Вильнюсский р-н',d7:'10 мес.',
+o8:'Двухэтажный дом с балконом',o8p:'Построен для заказчиков, живущих за границей',l8:'Каунасский р-н',d8:'12 мес.',
+o9:'Одноэтажный дом с вальмовой крышей',o9p:'Отделку заказчики сделали сами по нашему плану',l9:'Алитус',d9:'6 мес.',
+pfn1:'Хотите похожий дом? Рассчитаем его стоимость',pfn2:'Оставьте номер, и мы позвоним, чтобы обсудить ваш проект',ch1:'Звонок',
+cons:'Согласен на <a href="consent.html">обработку данных</a> по <a href="policy.html">политике конфиденциальности</a>',err:'Введите номер телефона и отметьте согласие',pbtn:'Узнать цену похожего дома',ok1:'Спасибо, заявка получена',ok2:'Позвоним в течение 15 минут в рабочее время',
+ft7:'© 2026 Название компании, код 000000000',ft8:'Политика конфиденциальности',ft9:'Согласие на обработку персональных данных',fabcall:'Позвонить',fabtip:'Здесь отвечаем в 3 раза быстрее'},
+en:{logo:'YOUR LOGO',m1:'Prices',m2:'Calculator',m3:'Process',m4:'Projects',m5:'FAQ',m6:'Contacts',
+ph1:'Over 100 completed houses across Lithuania',ph2:'A selection of projects with size, location, completion level and build time',
+c0:'All',c1:'Single-storey',c2:'Two-storey',c3:'Partial finish 85%',c4:'Turnkey',bk:'Turnkey',b85:'85%',
+o1:'Single-storey house with terrace',o1p:'Masonry house with timber facade and an air-to-water heat pump',l1:'Vilnius district',d1:'10 mo.',
+o2:'Two-storey family house',o2p:'Four bedrooms, two bathrooms and a mezzanine',l2:'Kaunas',d2:'7 mo.',
+o3:'House with garage',o3p:'Double garage and geothermal heating',l3:'Klaipėda district',d3:'11 mo.',
+o4:'Modern two-storey house',o4p:'Flat roof, large glazing and heat recovery ventilation',l4:'Trakai',d4:'12 mo.',
+o5:'Compact single-storey house',o5p:'Three rooms for a young family, A++ energy class',l5:'Šiauliai',d5:'5 mo.',
+o6:'House with attic floor',o6p:'Timber-frame house built in one season',l6:'Panevėžys',d6:'7 mo.',
+o7:'Single-storey house by the forest',o7p:'Clinker facade and a covered terrace',l7:'Vilnius district',d7:'10 mo.',
+o8:'Two-storey house with balcony',o8p:'Built for clients living abroad',l8:'Kaunas district',d8:'12 mo.',
+o9:'Single-storey house with hip roof',o9p:'The clients did the finishing themselves following our plan',l9:'Alytus',d9:'6 mo.',
+pfn1:'Want a similar house? We will price it for you',pfn2:'Leave your number and we will call to discuss your project',ch1:'Call',
+cons:'I agree to <a href="consent.html">data processing</a> under the <a href="policy.html">privacy policy</a>',err:'Enter your phone number and tick the consent box',pbtn:'Price a similar house',ok1:'Thank you, request received',ok2:'We will call you within 15 minutes during working hours',
+ft7:'© 2026 Company name, company code 000000000',ft8:'Privacy policy',ft9:'Consent to personal data processing',fabcall:'Call us',fabtip:'We reply 3 times faster here'}
+};
+</script>
+<script src="main.js"></script>
+<script>
+document.getElementById('chips').addEventListener('click',function(e){
+  var b=e.target.closest('button');if(!b)return;
+  this.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b);});
+  var f=b.dataset.f;
+  document.querySelectorAll('.obj').forEach(function(o){o.hidden=!(f==='all'||o.dataset.t.split(' ').indexOf(f)>-1);});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# Kol svetainė nepatvirtinta, paieškos sistemos jos neindeksuoja.
+# Paleidžiant pakeisti į: User-agent: *  /  Allow: /
+User-agent: *
+Disallow: /
